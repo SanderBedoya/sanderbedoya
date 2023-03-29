@@ -6,58 +6,252 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sander Bedoya</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/ants.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-
 </head>
 
 <body>
 
-    <a id="menu-ham" href="#" class="menu-ham animat__animated animate__fadeInUp animate__delay-4s"><img src="images/menu-ham-50x50.svg"></a>
-
+    <a id="menu-ham" href="" class="menu-ham animat__animated animate__fadeInUp animate__delay-4s"><img src="images/menu-ham-50x50.svg"></a>
+    <a href="#front" class="link-up">></a>
+    <img src="images/sb-logo-black.svg" alt="logo" class="nav__logo">
+    
+    <!-- NAVIGATION -->
     <nav id="nav" class="nav nav__close">
         <a id="btn-close" href="#" class="btn-close"><img src="images/close.svg"></a>
-        <img src="images/sb-logo-light-blue.svg" alt="logo" class="nav__logo">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Experience</a></li>
             <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Testimonials</a></li>
             <li><a href="#">Education</a></li>
+            <li><a href="#">Testimonials</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- LANGUAGES -->
+    <div id="languages" class="languages" lang-state="es">
+        <div id="languages__es" class="languages__es"></div>
+        <div id="languages__en" class="languages__en languages__en--inactive"></div>
+        <div id="languages__switch" class="languages__switch"></div>
+    </div>
+
+    <!-- MAIN -->
     <main>
-        <section class="front">
+
+        <!-- FRONTED -->
+        <section id="front" class="front">
             <div class="front__tittle">
                 <img class="front__avatar animat__animated animate__backInDown" src="images/sb-logo-black.svg">
                 <div class="front__first-name animat__animated animate__fadeInUp animate__delay-1s">ander</div>
-                <div class="front__last-name animat__animated animate__fadeInRightBig animate__delay-2s">bedoya</div>
+                <div class="front__last-name animat__animated animate__fadeInRightBig animate__delay-2s">Bedoya</div>
             </div>
-            <!-- <span class="front__intro">Hola, mi nombre es</span> -->
-            <span class="front__role animat__animated animate__fadeIn animate__delay-3s">software enginner</span>
-            <div class="front__actions">
-                <a href="#" class="front__link-about animat__animated animate__fadeInUp animate__delay-4s">Descargar CV</a>
-                <a href="#" class="front__link-about animat__animated animate__fadeInUp animate__delay-4s">A cerca de mi</a>
+            <span class="front__role animat__animated animate__fadeIn animate__delay-3s">web developer</span>
+            <div class="front__links">
+
+                <div href="#" class="front__button__downloads">
+                    <img src="images/pdf.svg" />
+                     descargar cv
+                    <div class="front__downloads">
+                        <a href="#" class="front__downloads__link"><img class="front__downloads__link-image" src="images/usa-flag-50x50.svg"></a>
+                        <a href="#" class="front__downloads__link"><img class="front__downloads__link-image" src="images/spain-flag-50x50.svg"></a>
+                    </div>
+                </div>
+
+
+                <a href="#about" class="section__link animat__animated animate__fadeInUp animate__delay-4s">a cerca de mi</a>
             </div>
 
-            <ul class="front__languages">
-                <li><a href="#" class="front__languages__link"><img class="front__languages__link-image animat__animated animate__fadeInUp animate__delay-4s" src="images/usa-flag-50x50.svg"></a></li>
-                <li><a href="#" class="front__languages__link"><img class="front__languages__link-image animat__animated animate__fadeInUp animate__delay-4s" src="images/spain-flag-50x50.svg"></a></li>
-            </ul>
         </section>
 
-        <section class="skills">
-            <ol>
-                <li>javascrip</li>
-                <li>php</li>
-                <li>mysql</li>
-                <li>gcp</li>
-            </ol>
+        <!-- ABOUT-->
+        <section id="about" class="section">
+            <div class="section__container">
+                <h2 class="section__tittle">A cerca de mi</h2>
+                <div class="section__box about__box">
 
+                    <img src="images/sander.jpg" alt="" class="about__image">    
+                    <div class="about__information">
+                        <p>Hola, mi nombre es <strong>SANDER HANS BEDOYA BALTAZAR</strong>, soy Boliviano y soy un pasionado <strong>WEB DEVELOPER</strong>.</p>
+                        <p>Con mas de 15 años de experiencia, he creado diferentes soluciones basados en WEB, desde landing pages,
+                              sitios web, portales web, hasta completas aplicaciones web para empresas de gran renombre de mi Pais.</p>
+                        <p>Me he desempeñado como codificador y como manager, trabajando en diferentes tipos de equipos y tambien liderando muchos de ellos,
+                             he conseguido desarrollar grandes soluciones corporativas, como CRMs, ERPs, soluciones ecommerce, herramientas administrativas y de géstion,
+                              ayudando asi a muchas empresas a digitalizarse o mejorar sus procesos y gestiones digitales.</p>
+                        <p>He trabajo en diferentes areas, como Frontend, Backend y Web Designer, tambien he sido Product Owner, Product Manager y Team Manager.
+                            A lo largo de mi carrera he usado varios lenguajes y herramientas, principalmente HTML, CSS, Javascript, PHP, ASP, Delphi, NodeJs, MySql, Git, etc., 
+                            frameworks como Yii, Laravel, Backbone, Angular, Reatc, Jquery y muchos mas.
+                        </p>
+                        <p>He sido docente de programción web durante 2 años, enseñando HTML, CSS, JAVASCRIP, PHP y bases da datos.</p>
+                        <p>Me gustan los retos, crear proyectos y/o desarrollar los de terceros, pienso, que si el programador se lo propone no tiene limites, por esta razon mi pensamiento es:</p>
+                        <p class="about__quote">"Si puedes soñarlo, puedes programarlo"</p>
+                    </div>
+
+                </div>
+                <div class="section__next">
+                    <a href="#exp" class="section__link">mi experiencia</a>
+                </div>
+                
+            </div>
         </section>
+
+        <!-- EXPERIENCE -->
+        <section id="exp" class="section exp">
+            <div class="section__container">
+                <h2 class="section__tittle">Mi experiencia</h2>
+                <div class="section__box exp__timeline"><!-- timeline -->
+ 
+                    <div class="exp__timeline__work exp__timeline__work-left"><!-- container -->
+                        <div class="exp__timeline__year">2022</div><!-- logo -->
+                        <div class="exp__timeline__work-info"><!-- text-box -->
+                            <h3>GERENTE DE GESTION</h3>
+                            <small>2017 - 2022</small>
+                            <h4>BUSSINESS APLICATION SERVICE PROVIDER S.A.</h4>
+                            <p>Responsable de las areas proyectos, producto, desarrollo, marketing, ventas, atención al cliente, recursos humanos y gestión.
+                                A cargo de 15 programadores, 3 diseñadores gráficos, 7 operadores de soporte, 2 arreas técnicas y 2 encargados de marketing Digital.
+                                AREA DE DESARROLLO: Implementación de los módulos de importaciones, geo-información.
+                            </p>
+                            <span class="exp__timeline__left-arrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="exp__timeline__work exp__timeline__work-right">
+                        <div class="exp__timeline__year exp__timeline__year-right">2017</div>
+                        <div class="exp__timeline__work-info">
+                            <h3>GERENTE DE PRODUCTO</h3>
+                            <small>2012 - 2017</small>
+                            <h4>BUSSINESS APLICATION SERVICE PROVIDER S.A.</h4>
+                            <p>
+                                Creación de la app gestión agrícola.
+                                Creación de la app de control de gestión para marketing digital.
+                                AREA MARKETING DIGITAL: Se publico mas de 5000 publicaciones en diferentes redes sociales, gestión de posicionamiento SEM y SEO.
+                                AREA ATC: Implementación de CRM y gestión de mas de 50000 prospectos y clientes.
+                            </p>
+                            <span class="exp__timeline__right-arrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="exp__timeline__work exp__timeline__work-left">
+                        <div class="exp__timeline__year">2012</div>
+                        <div class="exp__timeline__work-info">
+                            <h3>DEVELOPER</h3>
+                            <small>2012 - 2017</small>
+                            <h4>BUSSINESS APLICATION SERVICE PROVIDER S.A.</h4>
+                            <p>Responsable de las areas proyectos, producto, desarrollo, marketing, ventas, atención al cliente, recursos humanos y gestión.
+                                A cargo de 15 programadores, 3 diseñadores gráficos, 7 operadores de soporte, 2 arreas técnicas y 2 encargados de marketing Digital.
+                                AREA DE DESARROLLO: Implementación de los módulos de importaciones, geo-información.
+                            </p>
+                            <span class="exp__timeline__left-arrow"></span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+                <div class="section__next">
+                    <a href="#h-skills" class="section__link">habilidades</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="h-skills" class="section">
+            <div class="section__container">
+                <h2 class="section__tittle">Habilidades</h2>
+                <div class="section__box h-skills__box">
+
+                    <div class="h-skills__nav">
+                        <div id="h-skills__nav__hover" class="h-skills__nav__hover"></div>
+                        <a id="h-skills__nav__fronted" href="#" class="h-skills__nav__skill h-skills__nav__fronted h-skills__nav__hover-color">Fronted</a>
+                        <a id="h-skills__nav__backend" href="#" class="h-skills__nav__skill h-skills__nav__backend">Backend</a>
+                        <a id="h-skills__nav__tools" href="#" class="h-skills__nav__skill h-skills__nav__tools">Tools</a>
+                    </div>
+
+                    <div class="h-skills__skills">
+
+                        <div class="h-skills__skill">
+                            <h3>Fronted</h3>
+                            <p>
+                                Desde un inicio y a lo largo de mi carrera, me he desempañado como <strong>Frontend</strong>,
+                                 incluso antes que este termino como tal se use y popularize, pues antes nos llamaban <strong>"Web Masters"</strong>. 
+                                    He conocido y visto nacer bastantes tecnologias y he usado varias de ellas segun los proyectos que realize, algunas de desas tecnologias son las siguientes:</strong>
+                            </p>
+                            <div class="h-skills__skill__items">
+                                <div class="h-skills__skill__item"><img src="images/html5.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/css3.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/javascript.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/react.svg"><div class="h-skills__skill__bar bar-60"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/sass.svg"><div class="h-skills__skill__bar bar-90"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/angular.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/vue.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/svelte.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/jquery.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/bootstrap.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/tailwind.svg"><div class="h-skills__skill__bar bar-50"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/typescript.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/nextjs.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/redux.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                            </div>
+                        </div>
+
+                        <div style="display: none;" class="h-skills__skill">
+                            <h3>Backend</h3>
+                            <p>
+                                Como ex <strong>"WEB MASTER"</strong>, he trabajado como Backend bastante tiempo, desde ASP con ACCESS, pasando por PHP con MySql, 
+                                Python con Django, hasta el fabuloso Node.js con MongoDb, he usado una gran variedad de frameworks como cakePHP, Synfony, Yii, Laravel, Express y NestJs.
+                            </p>
+                            <div class="h-skills__skill__items">
+                                <div class="h-skills__skill__item"><img src="images/php.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/sql.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/mysql.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/yii.svg"><div class="h-skills__skill__bar bar-60"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/symfony.svg"><div class="h-skills__skill__bar bar-50"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/laravel.svg"><div class="h-skills__skill__bar bar-50"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/cakephp.svg"><div class="h-skills__skill__bar bar-50"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/python.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/django.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/nodejs.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/nest.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/mongo.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/jest.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                            </div>
+                        </div>
+
+                        <div style="display: none;" class="h-skills__skill">
+                            <h3>Tools</h3>
+                            <p>
+                                Como "WEB DEVELOPER" necesite de variadas herramientas de apoyo para lograr mis propositos, desde versionadores, herrmientas de diseño, 
+                                plataformas para produccion, etc., estas son algunas de estas herramientas.
+                            </p>
+                            <div class="h-skills__skill__items">
+                                <div class="h-skills__skill__item"><img src="images/photoshop.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/figma.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/subversion.svg"><div class="h-skills__skill__bar bar-80"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/git.svg"><div class="h-skills__skill__bar bar-50"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/github.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/gcp.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/aws.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/npm.svg"><div class="h-skills__skill__bar bar-50"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/strapi.svg"><div class="h-skills__skill__bar bar-40"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/docker.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/slack.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                                <div class="h-skills__skill__item"><img src="images/mongo.svg"><div class="h-skills__skill__bar bar-30"></div></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="section__next">
+                    <a href="#h-skills" class="section__link">educación</a>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <script src="js/main.js"></script>
